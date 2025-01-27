@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 const Logic = () => {
     const [inpText, setInpText] = useState("")
     const [sliderInput,setSliderInput]= useState(5)
+    const timerRef = useRef(null)
 
     const handleChange = (e) => {
         setInpText(e.target.value)
@@ -19,9 +20,16 @@ const Logic = () => {
             
             switch (permission) {
                 case "granted":
-                    new Notification("Notification Enabled!", {
+
+                    if (timerRef.current){
+                        clearInterval(timerRef.current)
+                    }
+                    timerRef.current =setInterval(()=>{
+                        new Notification("Mindfulness Alert", {
                         body: inpText || "Your notifications are now active",
-                    });
+                        }
+                    )
+                    },9000)
                     break;
                 case "denied":
                     alert("Please enable notifications in browser settings");
