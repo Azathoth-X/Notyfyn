@@ -29,7 +29,7 @@ const Logic = () => {
                         body: inpText || "Your notifications are now active",
                         }
                     )
-                    },9000)
+                    },sliderInput*60*1000)
                     break;
                 case "denied":
                     alert("Please enable notifications in browser settings");
