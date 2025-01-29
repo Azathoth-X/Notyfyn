@@ -5,7 +5,8 @@ Periodic notifications to keep you in control
 ## Features
 
 - Built with react 
-- Custom message for notification taken to as input
+- Custom message for notification taken as input
+- Checkout project [here](https://azathoth-x.github.io/Notyfyn/)
 
 ## Getting Started
 
