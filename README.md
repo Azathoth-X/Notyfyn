@@ -1,8 +1,52 @@
-# React + Vite
+# Notyfyn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Periodic notifications to keep you in control 
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Built with react 
+- Custom message for notification taken to as input
+
+## Getting Started
+
+### Prerequisites
+- npm/yarn
+
+### Installation
+
+```bash
+# Clone repository
+git clone <repository-url>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## Usage
+
+Basic usage instructions and examples.
+
+## Project Structure
+
+```
+src/           # Source files
+public/        # Static assets
+components/    # React components
+```
+
+## Technologies
+
+- React
+- Vite
+- Tailwind 
+
+## Contributing
+
+Any contributions are welcome to the project
+
+## License
+
+This project is licensed under the MIT License 
